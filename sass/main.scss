@@ -1,10 +1,18 @@
-// main.scss # Manifest File
-// Importación de elementos desde Google Fonts
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Playfair+Display:wght@700&display=swap');
-@import url('https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css');
 
-// Componentes del sitio
-@import 'components/_variables.scss';
-@import 'base/_typography.scss';
-@import 'pages/_home.scss';
-@import 'components/_header.scss';
+/** Componentes externos **/
+@import 'vendors/bootstrap.css';
+
+/** Componentes base **/
+@import 'base/typography';
+
+/** Estructura del sitio **/
+@import 'layout/article';
+@import 'layout/footer';
+@import 'layout/header';
+@import 'layout/nav';
+@import 'layout/section';
+
+
+/** Paginas **/
+@import 'pages/home';
+

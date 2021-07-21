@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+		<title>Houtel</title>
+		<meta charset="utf-8">
+		<meta name="description" content="Houtel">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+<header class="header">
+	<h1>Houtel</h1>
+</header>
+
+<article>
+	
+	<section>
+		<h2>Disfruta de los paisajes de</h2>
+		<h3>Chile</h3>
+		<button type="submit" class="btn btn-maslugares">Más destinos</button>
+	</section>
+
+	<section>
+		<form>
+			<div class="mb-3">
+				<label for="lugar" class="form-label">Lugar u Hotel</label>
+			  	<input type="text" class="form-control" id="lugar">
+
+				<label for="fechaDellegada" class="form-label">Lugar u Hotel</label>
+				<select class="form-select" id="fechaDellegada">
+					<option selected>Busca tu llegada</option>
+					<option value="05-Ago">5 de Agosto</option>
+					<option value="10-Ago">10 de Agosto</option>
+					<option value="15-Ago">15 de Agosto</option>
+			  	</select>
+
+				<label for="fechaDesalida" class="form-label">Fecha de salida</label>
+				<select class="form-select" id="fechaDesalida">
+					<option selected>Busca tu salida</option>
+					<option value="20-Ago">20 de Agosto</option>
+					<option value="25-Ago">25 de Agosto</option>
+					<option value="30-Ago">30 de Agosto</option>
+				</select>
+
+				<label for="tipoDealojamiento" class="form-label">Tipo de alojamiento</label>
+				<select class="form-select" id="tipoDealojamiento">
+					<option selected>Cantidad de huéspedes</option>
+					<option value="1">1 huésped</option>
+					<option value="2">2 huéspedes</option>
+					<option value="3">3 huéspedes</option>
+				</select>
+			</div>
+			<button type="submit" class="btn btn-buscar">Buscar</button>
+		</form>
+	</section>
+</article>
+
+</body>
+</html>
