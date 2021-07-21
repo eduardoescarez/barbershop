@@ -3,14 +3,40 @@
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;1,700&family=Roboto:wght@300;400&display=swap");
 /** Variables **/
 /** Componentes base **/
+body {
+  font-family: "Roboto", sans-serif;
+}
+
 /** Estructura del sitio **/
 .cabecera {
   background-image: url("../../assets/img/post-image.jpg");
   background-size: cover;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+}
+
+.introduccion {
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+  font-style: oblique;
+  font-size: 4rem;
+  color: white;
+  width: 65%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .naranja {
   color: #FF8000;
+}
+
+section p {
+  color: #6C6E70;
+  line-height: 2;
+}
+section a {
+  color: #E56353;
+  text-decoration: none;
 }
 
 /** Paginas **/
