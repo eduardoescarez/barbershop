@@ -59,6 +59,10 @@ footer {
   padding: 3rem;
 }
 
-/** Paginas **/
+.pagination__list {
+  color: red;
+}
+
+/** Paginas del sitio **/
 
 /*# sourceMappingURL=style.css.map */
