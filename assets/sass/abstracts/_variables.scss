@@ -1,7 +1,27 @@
 /** variables generales **/
-$playfair: 'Playfair Display', serif;
-$roboto: 'Roboto', sans-serif;
-$naranja: #FF8000;
-$eerieblack: #121619;
+$playfair:                          'Playfair Display', serif;
+$roboto:                            'Roboto', sans-serif;
+$white:                             #FFF;
+$platinum:                          #E6E7E7;
+$lightgray:                         #D1D1D1;
+$fuzzywuzzy:                        #E56353;
+$ruddypink:                         #D76C69;
+$spanishpink:                       #ECBCBA;
+$eerieblack:                        #121619;
+$raisinblack:                       #222323;
+$nickel:                            #6C6E70;
 
 /** variables de control de la paginacion de bootstrap **/
+
+$pagination-color:                  $eerieblack;
+$pagination-active-bg:              $nickel;
+$pagination-hover-color:            $fuzzywuzzy;
+
+/** variables de control de botones **/
+
+$btn-font-weight:                   100;
+
+// Variables de control de la barra de navegación
+
+$dark: $eerieblack;
+$navbar-dark-disabled-color:        $fuzzywuzzy;

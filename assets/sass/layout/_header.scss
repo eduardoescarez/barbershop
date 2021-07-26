@@ -1,14 +1,14 @@
-.cabecera{
+.section__header{
     background-image: url('../../assets/img/post-image.jpg');
     background-size: cover;
     padding-top: 8rem;
     padding-bottom: 8rem;
+
+    &--intro{
+        a{
+        color: white;
+        }
     }
-
-.introduccion{
-
-
-    a{
-    color: white;
-    }
+    
 }
+

@@ -15,8 +15,8 @@
 
 <body>
 
-<header class="header">
-	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<header>
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark header__navbar">
 		<div class="container">
 			<a class="navbar-brand" href="#"><img src="assets/img/logo.png" alt="BarbelShop" width="80"></a>
 		  	<div class="text-end">
@@ -28,7 +28,7 @@
 					<ul class="navbar-nav me-auto mb-2 mb-lg-0">
 					<li class="nav-item"> <a class="nav-link active" href="#">Nosotros</a> </li>
 					<li class="nav-item"> <a class="nav-link active" href="#">Trabajos</a> </li>
-					<li class="nav-item"> <a class="nav-link naranja" aria-current="page" href="#">Blog</a> </li>	
+					<li class="nav-item"> <a class="nav-link disabled" aria-current="page" href="#">Blog</a> </li>	
 			  		<li class="nav-item"> <a class="nav-link active" href="#">Horas</a> </li>
 					<li class="nav-item"> <a class="nav-link active" href="#">Contacto</a> </li>
 			  		</ul>
@@ -40,18 +40,18 @@
 
 <article>
 	
-	<section class="cabecera" id="cabecera">
+	<section class="section__header" id="cabecera">
 	<div class="container">
-		<h1 class="text-center introduccion">5 formas de cuidar un corte de cabello</h1>
+		<h1 class="text-center section__header--intro">5 formas de cuidar un corte de cabello</h1>
 		<br><br><br><br><br>
 		<br><br><br><br><br>
-		<h1 class="text-center introduccion"><a href="#contenido"><i class="fas fa-angle-double-down"></i></a></h1>
+		<h1 class="text-center section__header--intro"><a href="#contenido"><i class="fas fa-angle-double-down"></i></a></h1>
 	</div>
 	</section>
 
-	<section>
-	<div class="container contenido" id="contenido">
-		<p class="fecha">12 de abril de 2018</p>
+	<section class="section__contenido" id="contenido">
+	<div class="container contenido" >
+		<p class="section__contenido--fecha">12 de abril de 2018</p>
 
 		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis laoreet, tellus vel porta ultricies, nibh nulla tincidunt augue, et luctus ligula justo eu metus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Maecenas vehicula elit eget enim laoreet, tempor faucibus neque eleifend. Etiam dapibus, dui ut dictum hendrerit, sem nibh mattis nunc, non pharetra urna dolor et sapien. Aliquam eu velit sed lectus dictum dignissim sit amet sit amet neque. Etiam egestas mattis euismod. Suspendisse pellentesque viverra gravida. Phasellus vitae lectus vitae est porta vestibulum sit amet quis justo. Vivamus at imperdiet risus. Donec id lobortis ligula. In eu libero velit. Etiam quam nulla, dictum condimentum felis quis, hendrerit fringilla dui.</p>
 
@@ -61,29 +61,49 @@
 	</div>
 	</section>
 
-	<section id="botonesSociales">
+	<section id="social">
 		<div class="container">
 
-			<button type="button" class="btn btn-secondary btn-lg rounded-pill">Comentar</button>
-			<button type="button" class="btn btn-secondary btn-lg rounded-pill">Compartir en Twitter</button>
+			<button type="button" class="btn section__btn--gris rounded-pill">Compartir</button>&nbsp;&nbsp;&nbsp;
+			<button type="button" class="btn section__btn--gris rounded-pill">Comentar en Twitter</button>
 
 		</div>
 	</section>
 
-	<section id="autor">
-		<div class="container text-center">
-			<img src="assets/img/naomi-thai.png" class="rounded-circle" alt="Naomi Thai" width="140px">
-			<h3>Naoimi Thai</h3>
-			<p><a href="">@naomithai</a><br><a href="">depelos.com</a></p>
-		</div>
-		</section>
+	<hr>
 
-	<section id="paginacion">
-		<hr>
+	<section class="section__escritor" id="autor">
+
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-5 col-lg-2 align-self-center">
+					<img src="assets/img/naomi-thai.png" class="rounded-circle img-fluid" alt="Naomi Thai">
+				</div>
+				<div class="w-100 d-block d-lg-none"></div>
+				<div class="col-10 col-lg-4 align-self-center section__escritor--nombre">
+					<h3>Naoimi Thai</h3>
+					<p>	<a class="section__escritor--item" href="">@Naomithai</a>
+					   	<br>
+						<a class="section__escritor--item" href="">depelos.com</a>
+					</p>
+				</div>
+				<div class="w-100 d-block d-lg-none"></div>
+				<div class="col-5 align-self-center d-none d-lg-block">
+					<p class="section__escritor--descripcion">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras varius finibus nisl eu dapibus. Aenean sed auctor nisl. Nullam congue non mauris nec tincidunt. Donec eget felis posuere nunc pellentesque congue.</p>
+				</div>
+			</div>
+		</div>
+
+	</section>
+
+
+
+	<section id="paginacion" class="section__paginacion">
+		
 		<div class="container">
 			<nav aria-label="...">
 				<ul class="pagination justify-content-center">
-				  <li class="page-item disabled">
+				  <li class="page-item disabled rounded">
 					<a class="page-link" href="#" tabindex="-1" aria-disabled="true">Anterior</a>
 				  </li>
 				  <li class="page-item"><a class="page-link" href="#">1</a></li>
@@ -100,8 +120,9 @@
 	</section>
 </article>
 
+
 <footer>
-	<div class="container text-center"><img src="assets/img/logo.png"></div>
+	<div class="container text-center"><img class="footer__logo" src="assets/img/logo.png"></div>
 </footer>
 </footer>
 </body>

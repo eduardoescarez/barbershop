@@ -1,14 +1,57 @@
-section {
-  p {
-    color: #6C6E70;
-    line-height: 3;
+.section{
+
+  &__btn--gris{
+    @include button-variant($background: $nickel, $border: $nickel, $hover-background: $lightgray, $hover-border: $lightgray,);
   }
-  a{
-    color: #E56353;
-    text-decoration: none;
-  }
+
+  &__contenido {
+    p {
+      color: #6C6E70;
+      line-height: 3;
+    }
+
   
-  .fecha{
-    font-family: $playfair;
+    &--fecha{
+      padding-top: 2rem;
+      font-family: $playfair;
+      padding-bottom: 2rem;
+    }
   }
+
+  &__escritor{
+
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+  
+    &--item{
+      color: #E56353;
+      text-decoration: none;
+      &:hover{
+        color:$eerieblack;
+        text-decoration: none;
+      }
+      &:active{
+        color:$lightgray;
+        text-decoration: none;
+      }
+
+      
+    }
+     
+    &--nombre{
+      text-align: center;
+    }
+  
+    &--descripcion{
+        line-height: 2;
+        font-size:  14px;
+        color: $nickel;
+    }
+    
+
+  }
+
+
+  
 }
+
